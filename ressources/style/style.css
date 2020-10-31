@@ -1,0 +1,69 @@
+/* DOCUMENT INFORMATION
+    Name: Alexis Choloux - Portfolio
+    Version: 1.0.0
+    Author: Alexis Choloux
+    Date: 31/10/20
+
+FONTS
+    h1= 'Montserrat', sans-serif
+    h2= 'MuseoModerno', cursive
+    =>h3= 'Varta', sans-serif
+    p= 'Roboto', sans-serif
+
+COLORS
+    -Primary= #3097BF
+    -Secondary= #3270A6
+    -Tertiary= white
+    -Special= #bf3434
+
+CSS/HTML DIRECTORY
+    1. GENERAL
+    2. TOP HEADER
+*/
+
+/* GENERAL
+======================= */
+body h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body h2 {
+    font-family: 'MuseoModerno', cursive;
+}
+
+body h3, h4, h5, h6 {
+    font-family: 'Varta', sans-serif;
+}
+
+body p {
+    font-family: 'Roboto', sans-serif;
+}
+
+body button {
+    padding: 0 20px 3px 20px;
+    background-color: #bf3434;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+body button:hover {
+    scale: 1.1;
+    transition : 1s;
+}
+
+/* TOP HEADER
+====================== */
+#top-header {
+    padding-top: 10px;
+    background-color: #3270A6;
+    color: white;
+}
+
+#top-header p {
+    padding-top : 2px;
+}
+
+#top-header button {
+    font-size: 14px;
+}
