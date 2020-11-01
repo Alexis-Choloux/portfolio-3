@@ -19,6 +19,9 @@ COLORS
 CSS/HTML DIRECTORY
     1. GENERAL
     2. TOP HEADER
+    3. NAVBAR
+     - mediaqueries
+    4. HOME
 */
 
 /* GENERAL
@@ -43,6 +46,7 @@ body button {
     padding: 0 20px 3px 20px;
     background-color: #bf3434;
     border: none;
+    font-size: 25px;
     font-weight: bold;
     color: white;
     border-radius: 10px;
@@ -52,18 +56,82 @@ body button:hover {
     transition : 1s;
 }
 
+
 /* TOP HEADER
 ====================== */
 #top-header {
-    padding-top: 10px;
     background-color: #3270A6;
     color: white;
 }
 
 #top-header p {
-    padding-top : 2px;
+    padding-top : 15px;
+    margin-right: 20px;
 }
 
 #top-header button {
     font-size: 14px;
+}
+
+
+/* NAVBAR
+============================= */
+.navbar {
+    height: 70px;
+}
+
+#brand-img {
+    height: 120px;
+    margin-top: 70px;
+}
+
+/* media querries */
+@media screen and (max-width:991px) {
+    .navbar-toggler {
+        margin-top: -70px;
+    }
+    #brand-img {
+        margin-top : 0px;
+    }
+}
+
+
+/* HOME
+=========================== */
+#home {
+    background-image: url("../images/alexis-choloux-portfolio-main-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home button {
+    margin-bottom: 80px;
+    font-size: 22px;
+}
+#home button:hover {
+    scale: 1.3;
+}
+
+#first-title {
+    margin: -16px 0 140px 0;
+    font-size: 60px;
+    color:white;
+}
+
+#second-title {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#third-title {
+    font-size: 30px;
+    color: white;
+}
+
+/* media querries */
+@media screen and (max-width:1199px) {
+    #first-title {
+        margin: 70px 0 140px 0;
+    }
 }
