@@ -22,20 +22,35 @@ CSS/HTML DIRECTORY
     3. NAVBAR
      - mediaqueries
     4. HOME
+    5. PARCOURS
+     - mediaqueries
+    6.PORTFOLIO
 */
 
 /* GENERAL
 ======================= */
+html {
+    scroll-behavior: smooth;
+  }
+
 body h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
-body h2 {
+body h2, h3 {
     font-family: 'MuseoModerno', cursive;
+    font-size: 60px;
 }
 
-body h3, h4, h5, h6 {
+body h4, h5, h6 {
     font-family: 'Varta', sans-serif;
+}
+
+body h3 {
+    font-size: 40px;
+    color: #3097BF;
+    padding-top: 5px;
+    width: 550px;
 }
 
 body p {
@@ -45,8 +60,8 @@ body p {
 body button {
     padding: 0 20px 3px 20px;
     background-color: #bf3434;
-    border: none;
-    font-size: 25px;
+    border: solid #bf3434 1px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
     border-radius: 10px;
@@ -54,6 +69,15 @@ body button {
 body button:hover {
     scale: 1.1;
     transition : 1s;
+}
+
+main section {
+    margin-top: 20px;
+    padding-bottom: 100px;
+}
+
+body .spinner-grow {
+    margin-right: -20px;
 }
 
 
@@ -72,6 +96,7 @@ body button:hover {
 #top-header button {
     font-size: 14px;
 }
+
 
 
 /* NAVBAR
@@ -102,6 +127,7 @@ body button:hover {
     background-image: url("../images/alexis-choloux-portfolio-main-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 0px;
 }
 
 #home button {
@@ -133,5 +159,124 @@ body button:hover {
 @media screen and (max-width:1199px) {
     #first-title {
         margin: 70px 0 140px 0;
+    }
+}
+
+/* PARCOURS
+====================== */
+#parcours img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+#parcours button:hover {
+    scale: none;
+}
+
+#downloadCv:hover {
+    background-color: white;
+    border: solid #bf3434 1px;
+    color: #bf3434;
+}
+
+.hand {
+    position: relative;
+    animation-name: hand1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes hand1 {
+    0% {top: 0}
+    50% {top: 1.4vh}
+    100% {top: 0}
+}
+
+/* PORTFOLIO
+============================ */
+#portfolio {
+    margin-top: 30px;
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolioImg {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin-bottom: 3vh;
+}
+
+.imgTitle {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    background-color: #184872b4;
+    border-radius: 15px;
+}
+
+.imgTitle h4 {
+    padding: 10px 5px 0 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.portfolioImg:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
+#portfolioBtn {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+/* CONTACT
+============================== */
+#contact {
+    background-color: #3270A6;
+}
+
+#contact .card {
+    margin-top: -50px;
+    background-color: #132e46;
+    border-radius: 10px;
+    color: white;
+}
+
+#contact h3 {
+    color: white;
+    padding: 0;
+}
+
+#contactBtn:hover {
+    background-color: #132e46;
+    border: solid white 1px;
+    scale: none;
+}
+
+.text-grey {
+    color: rgb(192, 189, 189);
+}
+
+.social a {
+    color: rgba(255, 255, 255, 0.815);
+}
+.social a:hover {
+    color: #132e46;
+    transition: 1s;
+}
+
+/* mediaquerries */
+@media screen and (max-width:410px) {
+    #contactTitle {
+        font-size: 33px;
     }
 }
