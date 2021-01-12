@@ -65,6 +65,7 @@ body button {
     font-weight: bold;
     color: white;
     border-radius: 10px;
+    transition: 1s;
 }
 body button:hover {
     scale: 1.1;
@@ -208,6 +209,11 @@ body .spinner-grow {
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     margin-bottom: 3vh;
+    transition: 1s;
+}
+.portfolioImg:hover {
+    scale: 1.1;
+    transition: 1s;
 }
 
 .imgTitle {
@@ -223,11 +229,6 @@ body .spinner-grow {
     padding: 10px 5px 0 5px;
     font-size: 15px;
     font-weight: bold;
-}
-
-.portfolioImg:hover {
-    scale: 1.1;
-    transition: 1s;
 }
 
 #portfolioBtn {
@@ -265,6 +266,7 @@ body .spinner-grow {
 
 .social a {
     color: rgba(255, 255, 255, 0.815);
+    transition: 1s;
 }
 .social a:hover {
     color: #132e46;
