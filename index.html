@@ -166,7 +166,8 @@
 
         <div class="row">
           <div class="col-md-12 mt-4 text-center">
-            <a href="./ressources/files/cv-developpeur-web-full-stack-alexis-choloux.pdf"><button type="button" id="downloadCv">Télécharger le CV</button></a>
+            <a href="./ressources/files/cv-developpeur-web-full-stack-alexis-choloux.pdf"><button type="button"
+                id="downloadCv">Télécharger le CV</button></a>
           </div>
         </div>
 
@@ -186,7 +187,7 @@
             </div>
           </div>
           <div class="col-10 col-sm-6 d-flex justify-content-right align-items-end" id="portfolioTitle">
-            <h2 id="presentationTitle">Langages</h2>
+            <h2 id="presentationTitle" class="mb-3">Langages</h2>
           </div>
         </div>
 
@@ -195,33 +196,16 @@
 
         <div class="row text-center ml-2 mr-2 mt-5">
           <div class="col-md-4">
-            <p style="color: #fd7e14"><i class="fab fa-html5 fa-7x"></i></p>
-            <h6>HTML</h6>
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"
-                style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <p style="color: #fd7e14" data-bs-toggle="tooltip" title="HTML"><i
+                class="fab fa-html5 fa-7x"></i></p>
           </div>
 
           <div class="col-md-4">
-            <p style="color: #15aabf"><i class="fab fa-css3-alt fa-7x"></i></p>
-            <h6>CSS</h6>
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
-                style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <p style="color: #15aabf" data-bs-toggle="tooltip" title="CSS"><i class="fab fa-css3-alt fa-7x"></i></p>
           </div>
 
           <div class="col-md-4">
-            <p style="color: #7952b3"><i class="fab fa-bootstrap fa-7x"></i></p>
-            <h6>Bootstrap</h6>
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"
-                style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <p style="color: #7952b3" data-bs-toggle="tooltip" title="Bootstrap"><i class="fab fa-bootstrap fa-7x"></i></p>
           </div>
 
         </div>
@@ -229,33 +213,33 @@
         <div class="row text-center ml-2 mr-2 mt-5">
 
           <div class="col-md-4">
-            <p><img src="ressources/images/logos-competences/MySQL-Logo.png"></p>
-            <h6>MySQL</h6>
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
-                style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <p><img src="ressources/images/logos-competences/MySQL-Logo.png" data-bs-toggle="tooltip" title="MySQL"></p>
+
           </div>
 
           <div class="col-md-4">
-            <p style="color: #787cb4"><i class="fab fa-php fa-7x"></i></p>
-            <h6>PHP</h6>
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar"
-                style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <p style="color: #787cb4" data-bs-toggle="tooltip" title="PHP"><i class="fab fa-php fa-7x"></i></p>
+
           </div>
 
           <div class="col-md-4">
-            <p style="color: #ff2d20"><i class="fab fa-laravel fa-7x"></i></p>
-            <h6>Laravel</h6>
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
-                style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <p style="color: #ff2d20" data-bs-toggle="tooltip" title="Laravel"><i class="fab fa-laravel fa-7x"></i></p>
+          </div>
+
+        </div>
+
+        <div class="row text-center ml-2 mr-2 mt-5">
+
+          <div class="col-md-4">
+            <p style="color: #f7df1e" data-bs-toggle="tooltip" title="JavaScript"><i class="fab fa-js fa-7x"></i></p>
+          </div>
+
+          <div class="col-md-4">
+            <p style="color: #3fb984" data-bs-toggle="tooltip" title="Vue.js"><i class="fab fa-vuejs fa-7x"></i></p>
+          </div>
+
+          <div class="col-md-4">
+            <p style="color: #61dbfb" data-bs-toggle="tooltip" title="React native"><i class="fab fa-react fa-7x"></i></p>
           </div>
 
         </div>
@@ -285,6 +269,16 @@
       <div class="container-fluid">
         <div class="row ">
           <div class="col-md-4 portfolioDiv">
+            <a href="http://great-movies.alexis-choloux.com/" target="_blank" class="portfolioLink">
+              <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/great-movies.JPG)">
+                <div class="imgTitle">
+                  <h4>Great Movies</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 portfolioDiv">
             <a href="http://vintech.alexis-choloux.com/" target="_blank" class="portfolioLink">
               <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/vintech.JPG)">
                 <div class="imgTitle">
@@ -303,7 +297,10 @@
               </div>
             </a>
           </div>
+        </div>
 
+        <!-- content / second line -->
+        <div class="row">
           <div class="col-md-4">
             <a href="https://alexis-choloux.github.io/art-du-the/" target="_blank" class="portfolioLink">
               <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/l\'Art\ du\ The.png)">
@@ -313,10 +310,7 @@
               </div>
             </a>
           </div>
-        </div>
 
-        <!-- content / second line -->
-        <div class="row">
           <div class="col-md-4">
             <a href="https://alexis-choloux.github.io/portfolio-2/" target="_blank" class="portfolioLink">
               <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/Portfolio\ 2.jpg)">
@@ -336,16 +330,6 @@
               </div>
             </a>
           </div>
-
-          <div class="col-md-4">
-            <a href="https://alexis-choloux.github.io/kome-waza/" target="_blank" class="portfolioLink">
-              <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/Kome\ Waza.png)">
-                <div class="imgTitle">
-                  <h4>Kome Waza</h4>
-                </div>
-              </div>
-            </a>
-          </div>
         </div>
 
         <!-- content / third line / collapse -->
@@ -360,21 +344,20 @@
 
                 <div class="row">
                   <div class="col-md-4">
-                    <a href="https://alexis-choloux.github.io/profil/" target="_blank" class="portfolioLink">
-                      <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/Profil.png)">
+                    <a href="https://alexis-choloux.github.io/kome-waza/" target="_blank" class="portfolioLink">
+                      <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/Kome\ Waza.png)">
                         <div class="imgTitle">
-                          <h4>Profil page</h4>
+                          <h4>Kome Waza</h4>
                         </div>
                       </div>
                     </a>
                   </div>
 
                   <div class="col-md-4">
-                    <a class="portfolioLink">
-                      <div class="portfolioImg"
-                        style="background-image: url(ressources/images/Portfolio/projet-en-cours.jpg)">
+                    <a href="https://alexis-choloux.github.io/profil/" target="_blank" class="portfolioLink">
+                      <div class="portfolioImg" style="background-image: url(ressources/images/Portfolio/Profil.png)">
                         <div class="imgTitle">
-                          <h4>Projet en cours</h4>
+                          <h4>Profil page</h4>
                         </div>
                       </div>
                     </a>
@@ -475,7 +458,8 @@
                   </div>
 
                   <div class="col-lg-4 text-center mt-4">
-                    <a href="mailto:alexis.choloux.pro@gmail.com"><button type="button" id="contactBtn">Envoyer un mail</button></a>
+                    <a href="mailto:alexis.choloux.pro@gmail.com"><button type="button" id="contactBtn">Envoyer un
+                        mail</button></a>
                   </div>
                 </div>
 
@@ -550,6 +534,10 @@
     $('[data-toggle="popover"]').popover();
     $('#backgroundContentRight').scrollspy({ target: '#list-year' })
   });
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
 </script>
 
 </html>
